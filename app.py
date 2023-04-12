@@ -76,7 +76,7 @@ else:
         # Example data
         @st.cache_data
         def load_data():
-            url = 'https://raw.githubusercontent.com/shrigulhane100/EDA-Analysis-WEBSITE-using-pandas-profile-report/main/CSV%20files%20for%20website%20demo/phone_data.csv'
+            url = 'https://github.com/shrigulhane100/Automated-Data-Analysis-report-generator/blob/main/CSV%20files%20for%20website%20demo/phone_data.csv'
             df = pd.read_csv(url)
             return df
         df = load_data()
