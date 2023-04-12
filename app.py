@@ -10,11 +10,11 @@ st.set_page_config(page_title = 'your_data_analyse.com',layout='wide')
 # Web App Title
 st.markdown(
     """
-    <div style='text-align:center; background-color:#00c5c8; padding: 20px'>
+    <div style='text-align:center; background-color:#1abc9c; padding: 20px'>
         <h1>Data-Analysis</h1>
         <h3>Data Analysis with pandas-profiling</h3>
         <div style='background-color:#1abc9c; padding: 10px'>
-            <p style='margin-bottom: 0;'><b>Credit :</b> App built in `Python` + `Streamlit` by </p>
+            <p style='margin-bottom: 0;'><b>Credit :</b> Streamline Your Data Analysis with our Web Service </p>
             <p style='margin-top: 0;'><a href='https://github.com/shrigulhane100'>Shriyash Gulhane</a></p>
         </div>
     </div>
@@ -25,10 +25,10 @@ st.markdown(
 
 
 # Upload CSV data
-with st.sidebar.header('📤 Upload Your CSV Dataset'):
+with st.sidebar.header('Upload Your CSV Dataset'):
     uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["csv"])
     st.sidebar.markdown("""
-[Example Of CSV input file](https://raw.githubusercontent.com/shrigulhane100/EDA-Analysis-WEBSITE-using-pandas-profile-report/main/CSV%20files%20for%20website%20demo/automobile_data.csv)
+[Example Of CSV input file](https://raw.githubusercontent.com/shrigulhane100/Automated-Data-Analysis-report-generator/main/CSV%20files%20for%20website%20demo/automobile_data.csv)
 """)
 
 # Pandas Profiling Report
@@ -76,7 +76,7 @@ else:
         # Example data
         @st.cache_data
         def load_data():
-            url = 'https://raw.githubusercontent.com/shrigulhane100/EDA-Analysis-WEBSITE-using-pandas-profile-report/main/CSV%20files%20for%20website%20demo/phone_data.csv'
+            url = 'https://raw.githubusercontent.com/shrigulhane100/Automated-Data-Analysis-report-generator/main/CSV%20files%20for%20website%20demo/phone_data.csv'
             df = pd.read_csv(url)
             return df
         df = load_data()
