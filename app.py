@@ -43,11 +43,9 @@ if uploaded_file is not None:
     st.write(df)
     st.write('---')
     st.header('**Pandas Profiling Report**')
-    spp=st_profile_report(pr)
-    spp
-    if spp:
-        st.button('Download your report.')
-        spp.to_file('report.html')
+    st_profile_report(pr)
+    export=pr.to_html()
+    st.download_button(label="Download Full Report", data=export, file_name='report.html')
 
 else:
     st.markdown(
@@ -89,11 +87,9 @@ else:
         st.write(df)
         st.write('---')
         st.header('**Pandas Profiling Report**')
-        spp=st_profile_report(pr)
-        spp
-        if spp:
-            if st.button('Download your report.'):
-                pr.to_file('report.html')
+        st_profile_report(pr)
+        export=pr.to_html()
+        st.download_button(label="Download Full Report", data=export, file_name='report.html')
       
         
 
