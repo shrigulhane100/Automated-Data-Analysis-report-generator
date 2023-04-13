@@ -93,7 +93,7 @@ else:
         spp
         if spp:
             st.button('Download your report.')
-            spp.to_file('report.html')
+            pr.to_file('report.html')
       
         
 
