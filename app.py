@@ -43,9 +43,11 @@ if uploaded_file is not None:
     st.write(df)
     st.write('---')
     st.header('**Pandas Profiling Report**')
-    st_profile_report(pr)
-    if st.button('Download your report.'):
-        pr.to_file('report.html')
+    spp=st_profile_report(pr)
+    spp
+    if spp:
+        st.button('Download your report.'):
+        spp.to_file('report.html')
 
 else:
     st.markdown(
@@ -89,8 +91,6 @@ else:
         st.header('**Pandas Profiling Report**')
         st_profile_report(pr)
       
-if st.button('Download your report.'):
-        pr.to_file('report.html')
         
 
 hide_menu_style = """
