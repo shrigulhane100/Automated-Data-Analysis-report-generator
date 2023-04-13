@@ -44,6 +44,8 @@ if uploaded_file is not None:
     st.write('---')
     st.header('**Pandas Profiling Report**')
     st_profile_report(pr)
+    if st.button('Download your report.'):
+        pr.to_file('report.html')
 
 else:
     st.markdown(
@@ -86,6 +88,7 @@ else:
         st.write('---')
         st.header('**Pandas Profiling Report**')
         st_profile_report(pr)
+        
 
 hide_menu_style = """
         <style>
