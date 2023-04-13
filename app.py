@@ -46,7 +46,7 @@ if uploaded_file is not None:
     spp=st_profile_report(pr)
     spp
     if spp:
-        st.button('Download your report.'):
+        st.button('Download your report.')
         spp.to_file('report.html')
 
 else:
