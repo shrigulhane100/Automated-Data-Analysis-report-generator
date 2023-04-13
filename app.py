@@ -88,6 +88,9 @@ else:
         st.write('---')
         st.header('**Pandas Profiling Report**')
         st_profile_report(pr)
+      
+if st.button('Download your report.'):
+        pr.to_file('report.html')
         
 
 hide_menu_style = """
