@@ -92,8 +92,8 @@ else:
         spp=st_profile_report(pr)
         spp
         if spp:
-            st.button('Download your report.')
-            pr.to_file('report.html')
+            if st.button('Download your report.'):
+                pr.to_file('report.html')
       
         
 
