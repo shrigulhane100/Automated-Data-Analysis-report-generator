@@ -15,7 +15,7 @@ st.markdown(
         <h3>Download your interactive report in seconds</h3>
         <div style='background-color:#1abc9c; padding: 10px'>
             <p style='margin-bottom: 0;'><b>Developer :</b> <a href='https://github.com/shrigulhane100'>Shriyash Gulhane</a> </p>
-            <p style='margin-top: 0;'> 'Unleash the power of your data' </p>
+            <p style='margin-top: 0;'>Unleash the power of your data</p>
         </div>
     </div>
     <div style='height: 5px'></div>
