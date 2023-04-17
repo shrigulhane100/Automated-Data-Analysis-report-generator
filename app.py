@@ -45,7 +45,7 @@ if uploaded_file is not None:
     st.header('**Pandas Profiling Report**')
     st_profile_report(pr)
     export=pr.to_html()
-    st.download_button(label="Download Full Report", data=export, file_name='report.html')
+    st.download_button(label="Download Report", data=export, file_name='report.html')
 
 else:
     st.markdown(
@@ -89,7 +89,7 @@ else:
         st.header('**Pandas Profiling Report**')
         st_profile_report(pr)
         export=pr.to_html()
-        st.download_button(label="Download Full Report", data=export, file_name='report.html')
+        st.download_button(label="Download Report", data=export, file_name='report.html')
       
         
 
