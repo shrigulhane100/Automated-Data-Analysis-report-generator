@@ -4,7 +4,7 @@ import streamlit as st
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
 
-st.set_page_config(page_title = 'your_data_analyse.com',layout='wide')
+st.set_page_config(page_title = 'Online data analyse report',layout='wide')
 
 
 # Web App Title
@@ -14,8 +14,8 @@ st.markdown(
         <h1>Online Data Analysis report generator</h1>
         <h3>Download your interactive report in seconds</h3>
         <div style='background-color:#1abc9c; padding: 10px'>
-            <p style='margin-bottom: 0;'><b>Developer :</b> Unleash the power of your data </p>
-            <p style='margin-top: 0;'><a href='https://github.com/shrigulhane100'>Shriyash Gulhane</a></p>
+            <p style='margin-bottom: 0;'><b>Developer :</b> <a href='https://github.com/shrigulhane100'>Shriyash Gulhane</a> </p>
+            <p style='margin-top: 0;'> 'Unleash the power of your data' </p>
         </div>
     </div>
     <div style='height: 5px'></div>
