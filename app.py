@@ -11,10 +11,10 @@ st.set_page_config(page_title = 'your_data_analyse.com',layout='wide')
 st.markdown(
     """
     <div style='text-align:center; background-color:#1abc9c; padding: 20px'>
-        <h1>Data-Analysis</h1>
-        <h3>Data Analysis with pandas-profiling</h3>
+        <h1>Online Data Analysis report generator</h1>
+        <h3>Download your interactive report in seconds</h3>
         <div style='background-color:#1abc9c; padding: 10px'>
-            <p style='margin-bottom: 0;'><b>Credit :</b> Streamline Your Data Analysis with our Web Service </p>
+            <p style='margin-bottom: 0;'><b>Developer :</b> Unleash the power of your data </p>
             <p style='margin-top: 0;'><a href='https://github.com/shrigulhane100'>Shriyash Gulhane</a></p>
         </div>
     </div>
