@@ -12,4 +12,4 @@
 
 ![](https://github.com/shrigulhane100/Automated-Data-Analysis-report-generator/blob/main/img/Screenshot%20(633).png)
 
-1[](https://github.com/shrigulhane100/Automated-Data-Analysis-report-generator/blob/main/img/Screenshot%20(634).png)
+![](https://github.com/shrigulhane100/Automated-Data-Analysis-report-generator/blob/main/img/Screenshot%20(634).png)
