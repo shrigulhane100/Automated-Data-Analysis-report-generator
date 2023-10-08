@@ -32,7 +32,7 @@ with st.sidebar.header('Upload Your CSV Dataset'):
 
 # Pandas Profiling Report
 if uploaded_file is not None:
-    @st.cache
+    @st.cache_data
     def load_csv():
         csv = pd.read_csv(uploaded_file)
         return csv
@@ -72,7 +72,7 @@ else:
 
         
         # Example data
-        @st.cache
+        @st.cache_data
         def load_data():
             url = 'https://raw.githubusercontent.com/shrigulhane100/Automated-Data-Analysis-report-generator/main/CSV%20files%20for%20website%20demo/phone_data.csv'
             df = pd.read_csv(url)
