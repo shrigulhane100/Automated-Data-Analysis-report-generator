@@ -20,8 +20,7 @@ st.markdown(
     </div>
     <div style='height: 5px'></div>
     """,
-    unsafe_allow_html=True
-)
+    unsafe_allow_html=True)
 
 
 # Upload CSV data
@@ -33,7 +32,7 @@ with st.sidebar.header('Upload Your CSV Dataset'):
 
 # Pandas Profiling Report
 if uploaded_file is not None:
-    @st.cache_data
+    @st.cache
     def load_csv():
         csv = pd.read_csv(uploaded_file)
         return csv
@@ -56,14 +55,12 @@ else:
             <p style='margin-top: 0;'>Alternatively, click the button below to use an example dataset.</p>
         </div>
         """,
-        unsafe_allow_html=True
-    )
+        unsafe_allow_html=True)
     st.markdown(
         """
         <div style='height:5px'></div>
         """,
-        unsafe_allow_html=True
-    )
+        unsafe_allow_html=True)
     if st.button('Press to use Example Dataset'):
         st.markdown(
             """
@@ -71,12 +68,11 @@ else:
                 <p style='margin-bottom: 0;'>Using example dataset.</p>
             </div>
             """,
-            unsafe_allow_html=True
-        )
+            unsafe_allow_html=True)
 
         
         # Example data
-        @st.cache_data
+        @st.cache
         def load_data():
             url = 'https://raw.githubusercontent.com/shrigulhane100/Automated-Data-Analysis-report-generator/main/CSV%20files%20for%20website%20demo/phone_data.csv'
             df = pd.read_csv(url)
